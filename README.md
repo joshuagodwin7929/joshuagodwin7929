@@ -1,6 +1,6 @@
 # Detection Engineering | SOC | AD Security
 
-I'm an early-career security professional building real, working detection engineering skills, not just watching tutorials. I run my own Active Directory lab, attack it, defend it, and write up what actually happens.
+I'm a cybersecurity professional building real, working detection engineering skills, not just watching tutorials. I run my own Active Directory lab, attack it, defend it, and write up what actually happens.
 
 ## Core Stack
 
