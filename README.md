@@ -43,7 +43,7 @@ My approach across every project is the same: **log first, attack second, hunt t
 | [Detection-Engineering](https://github.com/joshuagodwin7929/Detection-Engineering) | Sigma rules built from real attacks, compiled to Elastic/KQL, tuned against false positives |
 | [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Caldera-driven emulation validating the Sigma rules above, with an ATT&CK coverage heatmap |
 | [Wazuh-SIEM-Lab](https://github.com/joshuagodwin7929/Wazuh-SIEM-Lab) | Custom AD/Kerberos detection rules, Active Response, CIS hardening, and a Caldera purple-team validation |
-| [Incident-Response](https://github.com/joshuagodwin7929/Incident-Response) | IR playbooks and response workflow documentation |
+| [Network-Intrusion-Analysis-Natureforce](https://github.com/joshuagodwin7929/Network-Intrusion-Analysis-Natureforce) | Packet-level investigation of the Natureforce malware traffic exercise |
 
 ## Connect
 
