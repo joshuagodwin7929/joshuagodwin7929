@@ -39,7 +39,7 @@ My approach across every project is the same: **log first, attack second, hunt t
 
 | Project | What it is |
 |---|---|
-| [Cybersecurity-Labs](https://github.com/joshuagodwin7929/Cybersecurity-Labs) | The full AD attack/defense lab, five phases from visibility foundation to Golden Ticket persistence |
+| [Elastic-SIEM-Labs](https://github.com/joshuagodwin7929/Cybersecurity-Labs) | The full AD attack/defense lab, five phases from visibility foundation to Golden Ticket persistence |
 | [Detection-Engineering](https://github.com/joshuagodwin7929/Detection-Engineering) | Sigma rules built from real attacks, compiled to Elastic/KQL, tuned against false positives |
 | [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Caldera-driven emulation validating the Sigma rules above, with an ATT&CK coverage heatmap |
 | [Network-Traffic-Analysis](https://github.com/joshuagodwin7929/Network-Traffic-Analysis) | Network-layer visibility work and the infrastructure issues behind it |
