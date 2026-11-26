@@ -1,51 +1,48 @@
-# Detection Engineering | SOC | AD Security
+# Okunnuwa Joshua Godwin
 
-I'm a cybersecurity professional building real, working detection engineering skills, not just watching tutorials. I run my own Active Directory lab, attack it, defend it, and write up what actually happens.
+**Detection Engineering · SOC · Active Directory Security**
 
-## Core Stack
+I build Active Directory labs, attack them, and write the detections, then prove the detections actually fire. Everything on this profile is work I've run end to end in my own lab, not notes from a tutorial. Where a technique stayed invisible, the write-up says so and shows how I closed the gap.
 
-**SIEM & Detection**
+My method is the same on every project: **log first, attack second, hunt third, then formalize.** I don't write a detection until I've run the real attack and seen what it looks like in the telemetry.
 
-![Elastic](https://img.shields.io/badge/-Elastic%20Stack-005571?style=for-the-badge&logo=elastic&logoColor=white)
-![Kibana](https://img.shields.io/badge/-Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
-![KQL](https://img.shields.io/badge/-KQL-0078D4?style=for-the-badge)
-![Sigma](https://img.shields.io/badge/-Sigma-1B7A43?style=for-the-badge)
-
-**Endpoint & Adversary Emulation**
-
-![Sysmon](https://img.shields.io/badge/-Sysmon-4285F4?style=for-the-badge)
-![Caldera](https://img.shields.io/badge/-MITRE%20Caldera-CC0000?style=for-the-badge)
-![Windows](https://img.shields.io/badge/-Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-**IR & Frameworks**
-
-![MITRE ATT&CK](https://img.shields.io/badge/-MITRE%20ATT%26CK-A31621?style=for-the-badge)
-![Active Directory](https://img.shields.io/badge/-Active%20Directory-00A4EF?style=for-the-badge)
+**Certifications:** CompTIA Security+ · ISC2 Certified in Cybersecurity (CC) · working toward CompTIA CySA+
 
 ---
 
-## About Me
+## Featured work
 
-I'm Joshua, working toward a career in the SOC/detection engineering space. This profile is a record of what I've actually built, not a list of what I've read about.
+**Start with [AD-Attack-Defense-Lab](https://github.com/joshuagodwin7929/AD-Attack-Defense-Lab)** if you only open one. It's the flagship and the others grow out of it.
 
-My approach across every project is the same: **log first, attack second, hunt third, then formalize.** I don't write a detection until I've run the real attack against my own lab and confirmed what it looks like in the telemetry. If something doesn't work or a technique stays undetected, the README says so. I'd rather show an honest gap than a polished lab that hides one.
-
-**Certifications:** CompTIA Security+ | ISC2 Certified in Cybersecurity (CC) | working toward CompTIA CySA+
-
----
-
-## Featured Projects
-
-| Project | What it is |
+| Project | What I did, and what it proves |
 |---|---|
-| [AD-Attack-Defense-Lab](https://github.com/joshuagodwin7929/AD-Attack-Defense-Lab) | The full AD attack/defense lab: an AD domain and an Elastic SIEM, then seven phases from visibility foundation and attacks through detection engineering to an incident report |
-| [Detection-Engineering](https://github.com/joshuagodwin7929/Detection-Engineering) | Sigma rules built from real attacks, compiled to Elastic/KQL, tuned against false positives |
-| [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Caldera-driven emulation validating the Sigma rules above with live Kibana alerts, plus an ATT&CK coverage heatmap |
-| [Wazuh-SIEM-Lab](https://github.com/joshuagodwin7929/Wazuh-SIEM-Lab) | Custom AD/Kerberos detection rules, Active Response, CIS hardening, and a Caldera purple-team validation |
-| [Network-Intrusion-Analysis-Natureforce](https://github.com/joshuagodwin7929/Network-Intrusion-Analysis-Natureforce) | Packet-level investigation of the Natureforce malware traffic exercise |
+| [AD-Attack-Defense-Lab](https://github.com/joshuagodwin7929/AD-Attack-Defense-Lab) | Built an AD domain and a self-hosted Elastic SIEM, then ran a seven-phase attack chain (LLMNR poisoning through Kerberoasting, BloodHound mapping and lateral movement to DCSync and a Golden Ticket). I hunted each step in Kibana, documented exactly where host-based visibility broke, closed the two biggest gaps, and wrote it up as an incident report. |
+| [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Re-ran the credential-access chain through MITRE Caldera to validate my detections, and confirmed four techniques firing as live Kibana alerts. The re-test also caught and fixed a real bug in one of my own detection rules. Mapped to ATT&CK with a coverage heatmap. |
+| [Detection-Engineering](https://github.com/joshuagodwin7929/Detection-Engineering) | Turned the lab's hunt queries into version-controlled Sigma rules, compiled to Elastic/KQL, mapped to MITRE ATT&CK and tuned against deliberate false positives, with a CI check on every push. |
+| [Wazuh-SIEM-Lab](https://github.com/joshuagodwin7929/Wazuh-SIEM-Lab) | Custom AD/Kerberos detection rules, Active Response, and CIS hardening on Wazuh, validated with a Caldera purple-team run that found and fixed a real detection gap. |
+| [Network-Intrusion-Analysis-Natureforce](https://github.com/joshuagodwin7929/Network-Intrusion-Analysis-Natureforce) | Packet-level investigation with Wireshark and tshark: found the infected host, extracted and verified the malware, measured the follow-on C2 session, and ended with draft Suricata and Sigma rules. |
+
+---
+
+## How I work
+
+- **Build, then break, then detect.** I stand up the environment and the logging first, run real attacks against it, and only then write detections against the telemetry they actually produced.
+- **Honest gaps over polished demos.** Two of my attacks left almost nothing in host-based logs. Rather than hide that, I documented why (DS Access auditing off, a forged ticket that only surfaces as a normal logon) and built the fixes.
+- **Validate, don't assume.** A detection isn't done until an automated attack trips it. That habit is what caught a rule of mine that had been passing its checks while matching nothing.
+
+---
+
+## Tools I work with
+
+**SIEM and detection:** Elastic Stack (Elasticsearch, Kibana, Logstash) · Wazuh · KQL · Sigma · Winlogbeat
+
+**Endpoint and emulation:** Sysmon · MITRE Caldera · Impacket · NetExec · BloodHound · Responder
+
+**Platforms and frameworks:** Windows Server / Active Directory · Linux · Docker · MITRE ATT&CK
+
+---
 
 ## Connect
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/okunnuwa-joshua-godwin)
-[![X](https://img.shields.io/badge/-X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/247shield)
+- LinkedIn: [okunnuwa-joshua-godwin](https://www.linkedin.com/in/okunnuwa-joshua-godwin)
+- X: [@247shield](https://x.com/247shield)
