@@ -6,6 +6,8 @@ I build Active Directory labs, attack them, and write the detections, then prove
 
 My method is the same on every project: **log first, attack second, hunt third, then formalize.** I don't write a detection until I've run the real attack and seen what it looks like in the telemetry.
 
+**Open to SOC analyst and junior detection-engineering roles.** The fastest way to see how I work is to open one of the projects below.
+
 **Certifications:** CompTIA Security+ · ISC2 Certified in Cybersecurity (CC) · working toward CompTIA CySA+
 
 ---
