@@ -39,9 +39,9 @@ My approach across every project is the same: **log first, attack second, hunt t
 
 | Project | What it is |
 |---|---|
-| [Elastic-SIEM-Labs](https://github.com/joshuagodwin7929/Cybersecurity-Labs) | The full AD attack/defense lab, five phases from visibility foundation to Golden Ticket persistence |
+| [AD-Attack-Defense-Lab](https://github.com/joshuagodwin7929/AD-Attack-Defense-Lab) | The full AD attack/defense lab: an AD domain and an Elastic SIEM, then seven phases from visibility foundation and attacks through detection engineering to an incident report |
 | [Detection-Engineering](https://github.com/joshuagodwin7929/Detection-Engineering) | Sigma rules built from real attacks, compiled to Elastic/KQL, tuned against false positives |
-| [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Caldera-driven emulation validating the Sigma rules above, with an ATT&CK coverage heatmap |
+| [Purple-Team-Automation](https://github.com/joshuagodwin7929/Purple-Team-Automation) | Caldera-driven emulation validating the Sigma rules above with live Kibana alerts, plus an ATT&CK coverage heatmap |
 | [Wazuh-SIEM-Lab](https://github.com/joshuagodwin7929/Wazuh-SIEM-Lab) | Custom AD/Kerberos detection rules, Active Response, CIS hardening, and a Caldera purple-team validation |
 | [Network-Intrusion-Analysis-Natureforce](https://github.com/joshuagodwin7929/Network-Intrusion-Analysis-Natureforce) | Packet-level investigation of the Natureforce malware traffic exercise |
 
